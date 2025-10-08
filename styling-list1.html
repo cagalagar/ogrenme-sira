@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program 1 - Styling List</title>
+    <!-- Bu site sadece deneme kodlama için yapılmış olup, gerçekliği yansıtmaz. -->
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+
+        }
+
+        .main-header{
+            background-color: #FF3E3E40;
+        }
+
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 180px);
+            text-align: right;
+
+        }
+
+        .main-nav__items{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main-nav__item{
+            display: inline-block;
+        }
+
+        #showcase{
+            background-color: #2E4C6D;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #finish{
+            background-color: #FF007ACC	;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Başlık -->
+     <header class="main-header">
+        <a href="#">Tactics&Operation Centre</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Rules</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Application</a>
+                </li>
+            </ul>        
+        </nav>
+
+     </header>
+
+     <!-- Main/Gövde -->
+     <main>
+        <section id="showcase">
+            <h1>Welcome to the Tactics&Operation Centre main site</h1>
+        </section>
+
+
+        <section id="finish">
+            <h1>Thanks for checking it</h1>
+        </section>
+
+     </main>
+</body>
+</html>
