@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program 4 - Pseudo Elements</title>
+    <!-- Bu site sadece deneme kodlama için yapılmış olup, gerçekliği yansıtmaz. -->
+    <style>
+        p::first-line{
+            font-weight: bold;
+            color: brown;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+
+        }
+
+        p.about::first-line{
+            color: green;
+        }
+
+        p::first-letter{
+            font-size: 48px;
+        }
+
+        ::selection{
+            background-color: blueviolet;
+        }
+
+        p::after{
+            content: '\261D';
+            font-size: 35px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pseudo elements  -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellendus et minus numquam nesciunt tenetur eos atque impedit totam, hic quae, ut voluptatibus. Saepe quas voluptatibus molestiae voluptate voluptatum harum?</p>
+
+    <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium iusto hic et, quam mollitia suscipit quaerat eos voluptate ducimus, expedita tempora ea repellendus nulla officiis, rerum delectus consequuntur? Tenetur, quos.</p>
+
+</body>
+</html>
