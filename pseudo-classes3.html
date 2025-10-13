@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program 3 - Psuedo Classes</title>
+    <!-- Bu site sadece deneme kodlama için yapılmış olup, gerçekliği yansıtmaz. -->
+    <style>
+        a{
+            border: 1px solid gray;
+            padding: 5px 8px;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+            width: 60px;
+        }
+
+        a:link{ 
+            color: red;
+            /* Bu basılmadığı zaman */
+        }
+        
+        a:visited{
+            color: green;
+            /* Bu site ziyaret edildiğinde */
+        }
+
+        a:hover{
+            color: white;
+            background-color: grey;
+            /* Mouse'yi üzerine getirdiğinde */
+        }
+
+        a:active{
+            color: white;
+            background-color: black;
+            /* Basılı tuturken */
+        }
+
+        p{
+            display: none;
+        }
+
+        div:active p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pseudo classes  -->
+
+    <a href="deneme site/test1.html">Home</a>
+    <a href="deneme site/test1 copy.html">Products</a>
+    <a href="deneme site/test1 copy 2.html">About</a>
+    
+    <br><br>
+
+    <div>
+        Click here!
+        <p>
+            Yeah, sure thing. You've clicked this thing. You gained nothing, wild 🙏 
+        </p>
+    </div>
+</body>
+</html>
