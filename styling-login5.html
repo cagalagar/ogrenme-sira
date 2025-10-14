@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Program 5 - Stayling Login</title>
+    <!-- Bu site sadece deneme kodlama için yapılmış olup, gerçekliği yansıtmaz. -->
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+
+        }
+
+        .main-header{
+            background-color: #FF3E3E40;
+            padding: 10px 16px;
+            
+        }
+
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 230px);
+            text-align: right;
+
+        }
+
+        .main-nav__items{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main-nav__item{
+            display: inline-block;
+            margin: 0px 10px;
+        }
+
+        .main-nav__item a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-header__logo{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .main-nav__item a:hover{
+            color: grey;
+        }
+        .main-nav__item a:active{
+            color: black;
+        }
+        .main-nav__item a::before{
+            content: '\2022';
+            padding: 0px 5px;
+        }
+        .main-nav__item--login a{
+            color: white;
+        }
+
+        .main-nav__item--login a{
+            border: 3px solid white;
+            border-radius: 8px;
+            padding: 5px 15px;
+            background-color: #2E4C6D;
+        }
+        .main-nav__item--login a::before{
+            content: none;
+        }
+        .main-nav__item--login a:hover{
+            background-color: white;
+            color: #2E4C6D;
+            border: 3px solid #2E4C6D;
+        }
+
+        #showcase{
+            background-color: #2E4C6D;
+            height: 810px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #finish{
+            background-color: #FF007ACC	;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Başlık -->
+     <header class="main-header">
+        <a href="#" class="main-header__logo">Tactics&Operation Centre</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Rules</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a href="#">Login</a>
+                </li>
+            </ul>        
+        </nav>
+
+     </header>
+
+     <!-- Main/Gövde -->
+     <main>
+        <section id="showcase">
+            <h1>Welcome to the Tactics&Operation Centre main site</h1>
+        </section>
+
+
+        <section id="finish">
+            <h1>Thanks for checking it</h1>
+        </section>
+
+     </main>
+</body>
+</html>
