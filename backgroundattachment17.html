@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Background Attachment - 17</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        .bg{
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .bg-image1{
+            background-image: url("backgr1.jpg");
+            height: 100vh;
+        }
+
+        .bg-image2{
+            height: 50vh;
+            background-image: url("backgr2.jpg");
+        }
+
+        .caption{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .caption .border{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        .box{
+            text-align: center;
+            padding: 50px 80px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bg bg-image1">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, inventore illum ipsum omnis dolores nihil molestias, autem eius magni odio beatae blanditiis id vero necessitatibus itaque animi? Nemo, dolor sint!
+        Rem porro dolores corporis, hic nulla eos amet cum ad. Sunt eum nemo consequuntur rem sequi repudiandae ratione nisi unde inventore! Deserunt corporis ad quos totam nam labore sapiente laudantium.
+        Nostrum officiis velit numquam unde eligendi molestiae earum doloribus quae voluptatem! Nam assumenda distinctio autem magni dolor nisi quam laborum! Quisquam voluptate eius impedit quam officiis cumque nobis eos accusantium.</p>
+    </div>
+
+    <div class="bg bg-image2">
+        <div class="caption">
+            <span class="border">Lorem, ipsum.</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h3>Lorem, ipsum.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, inventore illum ipsum omnis dolores nihil molestias, autem eius magni odio beatae blanditiis id vero necessitatibus itaque animi? Nemo, dolor sint!
+        Rem porro dolores corporis, hic nulla eos amet cum ad. Sunt eum nemo consequuntur rem sequi repudiandae ratione nisi unde inventore! Deserunt corporis ad quos totam nam labore sapiente laudantium.
+        Nostrum officiis velit numquam unde eligendi molestiae earum doloribus quae voluptatem! Nam assumenda distinctio autem magni dolor nisi quam laborum! Quisquam voluptate eius impedit quam officiis cumque nobis eos accusantium.</p>
+    </div>
+</body>
+</html>
