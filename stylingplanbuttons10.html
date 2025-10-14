@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Uygulama 10 - Styling Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="buttons.css">
+    <!-- Bu site sadece deneme kodlama için yapılmış olup, gerçekliği yansıtmaz. -->
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0;
+
+        }
+
+        .main-header{
+            background-color: #FC997C;
+            padding: 10px 16px;
+            
+        }
+
+        .main-nav{
+            display: inline-block;
+            width: calc(100% - 230px);
+            text-align: right;
+
+        }
+
+        .main-nav__items{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main-nav__item{
+            display: inline-block;
+            margin: 0px 10px;
+        }
+
+        .main-nav__item a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .main-header__logo{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        .main-nav__item a::before{
+            content: '\2022';
+            padding: 0px 5px;
+        }
+
+        .main-nav__item--login a::before{
+            content: none;
+        }
+
+
+        #showcase{
+            background: url('usarmy.jpg');  
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+            text-align: left;
+            color: #476EAE;
+        }
+
+        #how-it-works{
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        #how-it-works h2{
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .row{
+            margin-bottom: 40px;
+        }
+
+        .col-3{
+            display: inline-block;
+            width: 30%;
+            padding: 16px;
+            margin: 8px;
+        }
+
+        .col-2{
+            display: inline-block;
+            width: calc(50% - 2px);
+            height: 300px;
+            background-color: #CBDCEB;
+        }
+
+        .icon-box h3{
+            color: #3e4555;
+            font-size: 26px;
+        }
+
+        .icon-box i{
+            color: #FC997C;
+        }
+
+        .features_left{
+            background: url("NATO5.avif");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .features_right{
+            vertical-align: top;
+            padding: 20px;
+        }
+        .features_right h3{
+            font-size: 30px;
+        }
+
+        #purchases{
+            text-decoration: none;
+        }
+        #purchases h2{
+            text-align: center;
+        }
+        .purchase{
+            float: left;
+            margin: 5px;
+            padding: 5px;
+            width: 31%;
+            text-align: center;
+        }
+
+        .plan__futures{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .plan__futures li{
+            list-style-type: none;
+            margin-bottom: 8px;
+        }
+
+        .purchase__badge{
+            background-color: white;
+            color: #FC997C;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .recommended_plan{
+            background-color: #003161!important;
+            color: white;
+        }
+
+        .inner-plan{
+            padding: 25px 10px;
+            background-color: #edf5f7;
+            border-radius: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .inner-plan:hover{
+            box-shadow: rgba(50, 50, 93, 0.6) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            transition-duration: 0.6s;
+        }
+
+        .clearfix::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .container{
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- Başlık -->
+     <header class="main-header">
+        <a href="#" class="main-header__logo">Tactics&Operation Centre</a>
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="#">Home</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="#">Rules</a>
+                </li>
+                <li class="main-nav__item main-nav__item--login">
+                    <a class="btn btn-secondary" href="#">Login</a>
+                </li>
+            </ul>        
+        </nav>
+
+     </header>
+
+     <!-- Main/Gövde -->
+     <main>
+        <section id="showcase">
+            <h1>Welcome to the Tactics&Operation Centre </h1>
+        </section>
+
+        <section id="how-it-works">
+
+            <div class="row">
+                <h2>How it works?</h2>
+                <a>We will show you step by step how to attend deployments & formal events now!</a>
+            </div>
+
+            <div class="row">
+                <div class="icon-box col-3"> 
+                    <i class="fa-solid fa-right-to-bracket fa-3x"></i>
+                    <h3>Register JFOC</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi qui voluptates saepe, tempore temporibus architecto!</p>
+                </div>
+                <div class="icon-box col-3">
+                    <i class="fa-brands fa-buffer fa-3x"></i>
+                    <h3>Attend a Briefing</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate beatae deleniti ad assumenda mollitia perferendis.</p>
+                </div>
+                <div class="icon-box col-3">
+                    <i class="fa-solid fa-face-smile fa-3x"></i>
+                    <h3>Enjoy Events</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsa voluptate quod omnis in assumenda.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="features">
+            <div class="row">
+                <div class="features_left col-2"></div><div class="features_right col-2">
+                    <h3>NATO-NON Article 5 Is available now!</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt architecto vero eius amet tempora error voluptatibus incidunt odio vel impedit at libero quaerat alias expedita, molestias, esse numquam aliquam est voluptatem, recusandae nisi eveniet! Cum sequi repudiandae fugiat ex! Voluptatum!</p>
+                    <a class="btn btn-secondary" href="">Visit the SITE</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="purchases">
+            <h2>Become a Premium Member</h2>
+            <div class="container clearfix">
+                <div class="purchase">
+                    <div class="inner-plan">
+                        <h2>Free</h2>
+                        <h2>$0/Month</h2>
+                        <ul class="plan__futures">
+                            <li>Modified guns</li>
+                            <li>Experienced CQB trainers</li>
+                            <li>Special Operations with FA</li>
+                            <li>A place you can learn</li>
+                            <li>NAC Representives</li>
+                            <li>Good staff</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase">
+                    <div class="inner-plan recommended_plan">
+                        <h2 class="purchase__badge">Recommended</h2>
+                        <h2>Basic</h2>
+                        <h2>$9.99/Basic</h2>
+                        <ul class="plan__futures">
+                            <li>Modified guns</li>
+                            <li>Experienced CQB trainers</li>
+                            <li>Special Operations with FA</li>
+                            <li>A place you can learn</li>
+                            <li>NAC Representives</li>
+                            <li>Good staff</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="purchase">
+                    <div class="inner-plan">
+                        <h2>Premium</h2>
+                        <h2>$19.99/Month</h2>
+                        <ul class="plan__futures">
+                            <li>Modified guns</li>
+                            <li>Experienced CQB trainers</li>
+                            <li>Special Operations with FA</li>
+                            <li>A place you can learn</li>
+                            <li>NAC Representives</li>
+                            <li>Good staff</li>
+                        </ul>
+                        <div>
+                            <button class="btn btn-primary">Choose Plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+        </section>
+
+     </main>
+</body>
+</html>
